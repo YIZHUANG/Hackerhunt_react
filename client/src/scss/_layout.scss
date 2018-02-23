@@ -1,0 +1,46 @@
+.container {
+  max-width: 120rem;
+  margin-top: 4rem;
+  margin-right: 3rem;
+  min-height: 50 rem;
+}
+
+.content {
+  display: flex;
+  margin-left: 10rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-left: 0rem;
+    flex-direction: column;
+  }
+}
+
+.header {
+  height: 7rem;
+  display: flex;
+}
+
+.sidebar {
+  margin-right: 12rem;
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+}
+
+.content-view {
+  display: flex;
+  flex: 0 0 45%;
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 80%;
+  }
+}
+
+.subscribe {
+  margin-left: 40px;
+  margin-top: 3rem;
+  flex: 0 0 23%;
+}
+
+.right-gap {
+  flex: 1;
+}
